@@ -1,0 +1,120 @@
+*{
+	font-size: 14px;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 3px 5px ;
+	width: 670px;
+	border: none;
+	border-radius: 5px;
+	font-family: sans-serif;
+	box-shadow: 0 0 10px grey;
+	margin: 15px;
+	padding-top: 6px;
+	position: relative;
+}
+
+tr{
+	display: block;
+	margin-bottom: -5px;
+}
+tbody tr::before{
+	content: "";
+	display: block;
+	border-top:  1px solid lightgray;
+	margin-top: 5px;
+}
+
+th, td{
+	font-size: 0.9rem;
+	text-align: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+}
+td:first-child{
+	color: red;
+}
+
+th:nth-child(1), td:nth-child(1){
+	width: 120px;
+}
+
+th:nth-child(2), td:nth-child(2){
+	width: 50px;
+}
+th:nth-child(3), td:nth-child(3){
+	width: 80px;
+}
+th:nth-child(4), td:nth-child(4){
+	width: 40px;
+}
+
+th:nth-child(5), th:nth-child(6), td:nth-child(5), td:nth-child(6){
+	width: 30px;
+	
+}
+
+td:nth-child(5), td:nth-child(6), td:nth-child(7){
+		background: red;
+		font-family: Roboto, sans-serif;
+		text-align: center;
+		font-weight: bold;
+		color: white; 
+
+}
+th:nth-child(7), td:nth-child(7){
+	width: 100px;
+}
+
+td:nth-child(7){
+	background: #dc4e54;
+}
+
+th:nth-child(8), td:nth-child(8){
+	width: 80px;
+	padding-left: 30px;
+}
+tfoot tr:nth-child(1) td{
+    width: 670px;
+    margin: auto 0 0 0;
+    color: grey;
+    text-align: right;
+}
+tfoot tr:nth-child(2) td{
+    margin: auto 0 0 0;
+    width: 670px;
+    color: grey;
+    text-align: right;
+}
+
+tfoot tr:nth-child(3) td{
+    width: 670px;
+	font-style: italic;
+	font-size: 1rem;
+	font-weight: lighter; 
+    font-family: Roboto, sans-serif;
+    margin: 0 auto  0 0;
+    color: red;
+    text-align: center;
+
+}
+
+thead::before{
+	content: "\2716";
+	border-top:  1px solid lightgray;
+	margin-top: -23px;
+	margin-left: 657px;
+	padding: 1px;
+	font-size: 22px;
+	line-height: 21px;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	vertical-align: baseline;
+	position: absolute;
+	color: white;
+	background-color: black;
+	border-radius: 50%;
+	box-shadow: 0 0 10px grey;
+}
